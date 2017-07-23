@@ -1,0 +1,151 @@
+body
+  {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background: #FFFFFF
+  }
+div.bar
+  {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 15%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "Verdana", "Tahoma", "Gill Sans MT", "Gill Sans", sans-serif;
+    color: #FFFFFF;
+    background-image: url("back1.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-size: 10
+  }
+div.main
+  {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0%;
+    left: 15%;
+    height: 100%;
+    width: 85%;
+    overflow: auto;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: "Verdana", "Tahoma", "Gill Sans MT", "Gill Sans", sans-serif;
+    color: #000000;
+    font-size: 12;
+    line-height: 1.5
+  }
+span.navlink
+  {
+    display: block;
+    font-weight: bold
+  }
+p
+  {
+    margin-left: 10px;
+    margin-right: 10px;
+    clear: both
+  }
+form.paypal
+  {
+    margin-left: 10px;
+    margin-right: 10px
+    clear: both
+  }
+q
+  {
+    font-style: italic
+  }
+h1
+  {
+    font-family: "Verdana", "Tahoma", "Gill Sans MT", "Gill Sans", sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: url("image7.jpg");
+    background-repeat: repeat;
+    clear: both
+  }
+h2
+  {
+    font-family: "Verdana", "Tahoma", "Gill Sans MT", "Gill Sans", sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    clear: both
+  }
+h3
+  {
+    font-family: "Verdana", "Tahoma", "Gill Sans MT", "Gill Sans", sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    clear: both
+  }
+hr
+  {
+    margin-left: 10px;
+    margin-right: 10px;
+    clear: both
+  }
+ul
+  {
+    margin-left: 10px;
+    margin-right: 10px
+  }
+address
+  {
+    margin-left: 10px;
+    margin-right: 10px
+  }
+a:link
+  {
+    text-decoration: underline;
+    color: #FF9900
+  }
+a:visited
+  {
+    text-decoration: underline;
+    color: #999999
+  }
+a:hover
+  {
+    text-decoration: none;
+    background: #FF9900;
+    color: #FFFFFF
+  }
+table
+  {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 12;
+    line-height: 1.5
+  }
+img.left
+  {
+    border: 1px solid;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    vertical-align: text-top
+  }
+img.right
+  {
+    border: 1px solid;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float: right;
+    vertical-align: text-top
+  }
