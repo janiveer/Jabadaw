@@ -7,7 +7,7 @@ body
     overflow: hidden;
     background: #FFFFFF
   }
-div.bar
+nav, div.bar
   {
     display: block;
     position: absolute;
@@ -26,7 +26,7 @@ div.bar
     background-attachment: fixed;
     font-size: 10
   }
-div.main
+main, div.main
   {
     display: block;
     position: absolute;
