@@ -1,22 +1,18 @@
+html
+  {
+    font-size: 1pc
+  }
 body
   {
     height: 100%;
     width: 100%;
     margin: 0%;
     padding: 0%;
-    overflow: hidden;
     background: #FFFFFF
   }
 nav, div.bar
   {
     display: block;
-    position: absolute;
-    z-index: 1;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 15%;
-    overflow: hidden;
     margin: 0;
     padding: 0;
     font-family: "Verdana", "Tahoma", "Gill Sans MT", "Gill Sans", sans-serif;
@@ -24,17 +20,11 @@ nav, div.bar
     background-image: url("back1.jpg");
     background-repeat: repeat;
     background-attachment: fixed;
-    font-size: 10
+    font-size: 1em;
   }
 main, div.main
   {
     display: block;
-    position: absolute;
-    z-index: 0;
-    top: 0%;
-    left: 15%;
-    height: 100%;
-    width: 85%;
     overflow: auto;
     margin: 0px;
     padding-left: 0px;
@@ -43,12 +33,11 @@ main, div.main
     padding-bottom: 0px;
     font-family: "Verdana", "Tahoma", "Gill Sans MT", "Gill Sans", sans-serif;
     color: #000000;
-    font-size: 12;
+    font-size: 1em;
     line-height: 1.5
   }
 span.navlink
   {
-    display: block;
     font-weight: bold
   }
 p
@@ -130,7 +119,7 @@ table
     padding-right: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-    font-size: 12;
+    font-size: 1em;
     line-height: 1.5
   }
 img.left
@@ -149,3 +138,53 @@ img.right
     float: right;
     vertical-align: text-top
   }
+@media only screen and (max-width: 700px) {
+  nav, div.bar
+    {
+      position: static;
+      z-index: auto;
+      top: auto;
+      left: auto;
+      height: auto;
+      width: 100%;
+      overflow: auto;
+    }
+  main, div.main
+    {
+      position: static;
+      z-index: auto;
+      top: auto;
+      left: auto;
+      height: auto;
+      width: 100%;
+    }
+  span.navlink
+    {
+      display: inline;
+    }
+}
+@media only screen and (min-width: 700px) {
+  nav, div.bar
+    {
+      position: absolute;
+      z-index: 1;
+      top: 0%;
+      left: 0%;
+      height: 100%;
+      width: 15%;
+      overflow: hidden;
+    }
+  main, div.main
+    {
+      position: absolute;
+      z-index: 0;
+      top: 0%;
+      left: 15%;
+      height: 100%;
+      width: 85%;
+    }
+  span.navlink
+    {
+      display: block;
+    }
+}
