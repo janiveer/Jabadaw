@@ -36,10 +36,6 @@ main, div.main
     font-size: 1em;
     line-height: 1.5
   }
-span.navlink
-  {
-    font-weight: bold
-  }
 p
   {
     margin-left: 10px;
@@ -118,6 +114,10 @@ table
     padding-bottom: 0px;
     font-size: 1em;
     line-height: 1.5
+  }
+img
+  {
+    max-width: 100%
   }
 img.left
   {
