@@ -72,6 +72,10 @@ h2, h3, summary
     margin-right: 10px;
     clear: both
   }
+summary
+  {
+    cursor: pointer
+  }
 hr
   {
     margin-left: 10px;
