@@ -136,7 +136,7 @@ img.right {
     vertical-align: text-top
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 680px) {
   span.navlink label {
       display: none;
   }
