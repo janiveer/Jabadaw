@@ -1,17 +1,16 @@
-html
-  {
+html {
     font-size: 1pc
-  }
-body
-  {
+}
+
+body {
     height: 100%;
     width: 100%;
     margin: 0%;
     padding: 0%;
     background: #FFFFFF
-  }
-nav, div.bar
-  {
+}
+
+nav, div.bar {
     display: block;
     margin: 0;
     padding: 0;
@@ -21,9 +20,9 @@ nav, div.bar
     background-repeat: repeat;
     background-attachment: fixed;
     font-size: 1em;
-  }
-main, div.main
-  {
+}
+
+main, div.main {
     display: block;
     overflow: auto;
     margin: 0px;
@@ -35,77 +34,77 @@ main, div.main
     color: #000000;
     font-size: 1em;
     line-height: 1.5
-  }
-p
-  {
+}
+
+p {
     margin-left: 10px;
     margin-right: 10px;
     clear: both
-  }
-form.paypal
-  {
+}
+
+form.paypal {
     margin-left: 10px;
     margin-right: 10px;
     clear: both
-  }
-q
-  {
+}
+
+q {
     font-style: italic
-  }
-h1
-  {
+}
+
+h1 {
     font-family: "Verdana", "Tahoma", "Gill Sans MT", "Gill Sans", sans-serif;
     margin-left: 10px;
     margin-right: 10px;
     background-image: url("image7.jpg");
     background-repeat: repeat;
     clear: both
-  }
-h2, h3, summary
-  {
+}
+
+h2, h3, summary {
     font-family: "Verdana", "Tahoma", "Gill Sans MT", "Gill Sans", sans-serif;
     margin-left: 10px;
     margin-right: 10px;
     clear: both
-  }
-summary
-  {
+}
+
+summary {
     cursor: pointer
-  }
-hr
-  {
+}
+
+hr {
     margin-left: 10px;
     margin-right: 10px;
     clear: both
-  }
-ul
-  {
+}
+
+ul {
     margin-left: 10px;
     margin-right: 10px
-  }
-address
-  {
+}
+
+address {
     margin-left: 10px;
     margin-right: 10px
-  }
-a:link
-  {
+}
+
+a:link {
     text-decoration: underline;
     color: #FF9900
-  }
-a:visited
-  {
+}
+
+a:visited {
     text-decoration: underline;
     color: #999999
-  }
-a:hover
-  {
+}
+
+a:hover {
     text-decoration: none;
     background: #FF9900;
     color: #FFFFFF
-  }
-table
-  {
+}
+
+table {
     margin-left: 10px;
     margin-right: 10px;
     padding-left: 0px;
@@ -114,31 +113,48 @@ table
     padding-bottom: 0px;
     font-size: 1em;
     line-height: 1.5
-  }
-img
-  {
+}
+
+img {
     max-width: 100%;
     height: auto
-  }
-img.left
-  {
+}
+
+img.left {
     border: 1px solid;
     margin-right: 10px;
     margin-bottom: 10px;
     float: left;
     vertical-align: text-top
-  }
-img.right
-  {
+}
+
+img.right {
     border: 1px solid;
     margin-left: 10px;
     margin-bottom: 10px;
     float: right;
     vertical-align: text-top
+}
+
+@media only screen and (max-width: 576px) {
+  span.navlink label {
+      display: none;
   }
-@media only screen and (max-width: 700px) {
-  nav, div.bar
-    {
+  nav > p {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+  }
+  span.navlink {
+      -webkit-flex: 1;  /* Safari 6.1+ */
+      -ms-flex: 1;  /* IE 10 */
+      flex: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav, div.bar {
       position: static;
       z-index: auto;
       top: auto;
@@ -146,24 +162,25 @@ img.right
       height: auto;
       width: 100%;
       overflow: auto;
-    }
-  main, div.main
-    {
+  }
+  main, div.main {
       position: static;
       z-index: auto;
       top: auto;
       left: auto;
       height: auto;
       width: 100%;
-    }
-  span.navlink
-    {
+  }
+  span.navlink {
       display: inline;
-    }
+  }
+  span.navlink label{
+    padding-left: 0.25em;
+  }
 }
-@media only screen and (min-width: 700px) {
-  nav, div.bar
-    {
+
+@media only screen and (min-width: 768px) {
+  nav, div.bar {
       position: absolute;
       z-index: 1;
       top: 0%;
@@ -171,18 +188,19 @@ img.right
       height: 100%;
       width: 15%;
       overflow: hidden;
-    }
-  main, div.main
-    {
+  }
+  main, div.main {
       position: absolute;
       z-index: 0;
       top: 0%;
       left: 15%;
       height: 100%;
       width: 85%;
-    }
-  span.navlink
-    {
+  }
+  span.navlink {
       display: block;
-    }
+  }
+  span.navlink i.fa {
+      display: none;
+  }
 }
